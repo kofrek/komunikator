@@ -5,12 +5,12 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <p>cos</p>
-    </>
+    <div>
+      <h1>Witaj w komunikatorze!</h1>
+      <p>To moja aplikacja React.</p>
+      <button>Napisz wiadomość</button>
+    </div>
   )
 }
 
