@@ -9,9 +9,9 @@ function App() {
 
   return (
     <>
-     <p>cos</p>
+      <p>cos</p>
+    </>
   )
 }
 
 export default App
-
