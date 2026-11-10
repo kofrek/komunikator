@@ -6,11 +6,17 @@ import './App.css'
 
 function App() {
   return (
-    <div>
-      <h1>Witaj w komunikatorze!</h1>
-      <p>To moja aplikacja React.</p>
-      <button>Napisz wiadomość</button>
-    </div>
+     
+ 
+ 
+ <main class="logowanie">
+        <h1>Witaj w komunikatorze!</h1> 
+       wpisz swoją nazwe <input type="text" /> <br />
+       wpisz swoje  hasło <input type="password"/> <br />
+       <input type="button" value="" />
+
+      <h3>s</h3>
+    </main>
   )
 }
 
