@@ -1,4 +1,4 @@
-import zdj1 from '/src/assets/'
+import zdj1 from '/src/assets/galak pizza.webp'
 import './App.css'
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
       </main>
 
       <div className="boczny">
-        img
+        <img src="galak pizza.webp" alt="pizza" />
 
       </div>
     </>
