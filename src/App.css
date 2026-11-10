@@ -3,12 +3,14 @@ body{
 }
 h1{
   background-color: cadetblue;
+  color: burlywood;
 }
 
 
 .logowanie{
   text-align: center;
-  color: cornflowerblue;
+background-color: aquamarine;
   border-radius: 200px;
   border-top-left-radius: 20px;
+  color: black;
 }

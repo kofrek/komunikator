@@ -1,23 +1,38 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+import zdj1 from '/src/assets/'
 import './App.css'
 
 function App() {
   return (
-     
- 
- 
- <main class="logowanie">
-        <h1>Witaj w komunikatorze!</h1> 
-       wpisz swoją nazwe <input type="text" /> <br />
-       wpisz swoje  hasło <input type="password"/> <br />
-       <input type="button" value="potwierdz" />
+    <>
+      <main className="logowanie">
+        <h1>Witaj w komunikatorze!</h1>
 
-      <h3>s</h3>
-    </main>
+        <label>
+          Wpisz swoją nazwę
+          <input type="text" placeholder="Nazwa użytkownika" />
+        </label>
+
+        <br />
+
+        <label>
+          Wpisz swoje hasło
+          <input type="password" placeholder="Hasło" />
+        </label>
+
+        <br />
+
+        <input type="button" value="Potwierdź" />
+
+        <h3>s</h3>
+      </main>
+
+      <div className="boczny">
+        img
+
+      </div>
+    </>
   )
 }
 
 export default App
+
