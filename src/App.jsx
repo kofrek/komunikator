@@ -27,7 +27,7 @@ function App() {
       </main>
 
       <div className="boczny">
-        <a href="https://galakpizza.pl/"><img src={zdj1} alt="galak pizza" /> </a>
+        <a href="https://galakpizza.pl/" target="_blank"><img src={zdj1} alt="galak pizza" /> </a>
 
       </div>
     </>
