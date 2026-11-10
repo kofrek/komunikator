@@ -1,5 +1,14 @@
+body{
+  font-family: cursive;
+}
+h1{
+  background-color: cadetblue;
+}
+
+
 .logowanie{
   text-align: center;
   color: cornflowerblue;
   border-radius: 200px;
+  border-top-left-radius: 20px;
 }
