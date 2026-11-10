@@ -13,7 +13,7 @@ function App() {
         <h1>Witaj w komunikatorze!</h1> 
        wpisz swoją nazwe <input type="text" /> <br />
        wpisz swoje  hasło <input type="password"/> <br />
-       <input type="button" value="" />
+       <input type="button" value="potwierdz" />
 
       <h3>s</h3>
     </main>
