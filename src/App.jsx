@@ -8,14 +8,14 @@ function App() {
         <h1>Witaj w komunikatorze!</h1>
 
         <label>
-          Wpisz swoją nazwę
+        <p>  Wpisz swoją nazwę</p>
           <input type="text" placeholder="Nazwa użytkownika" />
         </label>
 
         <br />
 
         <label>
-          Wpisz swoje hasło
+  <p>        Wpisz swoje hasło</p>
           <input type="password" placeholder="Hasło" />
         </label>
 
@@ -23,7 +23,7 @@ function App() {
 
         <input type="button" value="Potwierdź" />
 
-        <h3>s</h3>
+        
       </main>
 
       <div className="boczny">
