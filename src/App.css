@@ -13,4 +13,8 @@ background-color: aquamarine;
   border-radius: 200px;
   border-top-left-radius: 20px;
   color: black;
+  word-spacing: 15px;
+}
+img{
+align-items: center;
 }
