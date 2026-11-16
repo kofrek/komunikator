@@ -21,9 +21,10 @@ function App() {
 
         <br /> 
         <br />
+
       <p>niepamietasz hasła?</p><a href="https://www.facebook.com/r.php/"><p>zarejestruj sie</p></a>
 
-        <input type="button" value="Potwierdź" />
+        <input type="button" value="zaloguj sie " />
 
         
       </main>
