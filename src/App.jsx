@@ -19,7 +19,9 @@ function App() {
           <input type="password" placeholder="Hasło" />
         </label>
 
+        <br /> 
         <br />
+      <p>niepamietasz hasła?</p><a href="https://www.facebook.com/reg/?entry_point=login"><p>zarejestruj sie</p></a>
 
         <input type="button" value="Potwierdź" />
 
