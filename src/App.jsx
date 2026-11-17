@@ -1,12 +1,18 @@
 import zdj1 from '/src/assets/galak pizza.webp'
 import './App.css'
 
-function App() {
+
+export default function App() {
+  const [zakladka, zmianaZakladki] = useState("grafika");
+  const [ilosc, zmianaIlosci] = useState(0);
+
+
+function logowanie() {
   return (
     <>
       <main className="logowanie">
         <h1>Witaj w komunikatorze!</h1>
-
+<h3>zaloguj sie czarnuchu!</h3>
         <label>
         <p>  Wpisz swoją nazwę</p>
           <input type="text" placeholder="Nazwa użytkownika" />
@@ -22,9 +28,9 @@ function App() {
         <br /> 
         <br />
 
-      <p>niepamietasz hasła?</p><a href="https://www.facebook.com/r.php/"><p>zarejestruj sie</p></a>
+      <p>niepamietasz hasła?</p><a href="https://www.facebook.com/r.php/" target="_blank"><p>zarejestruj sie</p></a>
 
-        <input type="button" value="zaloguj sie " />
+        <input type="button" value="zaloguj sie " id="zakladka1" onClick={() => zmianaZakladki("komunikator")}></input>/
 
         
       </main>
@@ -36,6 +42,36 @@ function App() {
     </>
   )
 }
+function komunikator(){
+  return(
+    <>
+    <main id="komunikator">
+      <h1>strona w budowie</h1>
+    </main>
+    
+    </>
+  )
+
+
+
+
+
+}
 
 export default App
 
+ const zakladki = {
+    logowanie:  logowanie,
+  
+  };
+
+  const AktywnaZakladka = zakladki[zakladka];
+
+  return (
+    <center>
+      <Opcje />
+      <br />
+      <AktywnaZakladka />
+    </center>
+  );
+}
