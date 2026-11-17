@@ -3,7 +3,7 @@ import './App.css'
 
 
 export default function App() {
-  const [zakladka, zmianaZakladki] = useState("grafika");
+  const [zakladka, zmianaZakladki] = useState("logowanie");
   const [ilosc, zmianaIlosci] = useState(0);
 
 
