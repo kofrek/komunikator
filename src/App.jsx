@@ -28,7 +28,7 @@ export default function App() {
  <br />
 
  <p>niepamietasz hasła?</p><a href="https://www.facebook.com/r.php/" target="_blank"><p>zarejestruj sie</p></a>
-  <input type="button" value="zaloguj sie " id="zakladka1" onClick={() => zmianaZakladki("komunikator")}></input>/
+  <input type="button" value="zaloguj sie " id="zakladka1" onClick={() => zmianaZakladki("komunikator")}></input>
  </main>
  <div className="boczny">
  <a href="https://galakpizza.pl/" target="_blank"><img src={zdj1} alt="galak pizza" /> </a>
@@ -38,7 +38,7 @@ export default function App() {
  } function komunikator(){                                                                                                                                                                             return(
  <>
   <main id="komunikator">
- <h1>strona w budowie</h1>
+<h3>cos</h3>
 </main>
                                                                                                                                                                                             
  </>
@@ -46,6 +46,7 @@ export default function App() {
 }
 const zakladki = {
  Logowanie:  logowanie,
+ Komunikator: komunikator,
                                                                                                                                                                                                          
 };
  const AktywnaZakladka = zakladki[zakladka];
