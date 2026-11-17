@@ -58,7 +58,7 @@ function komunikator(){
 
 }
 
-export default App
+
 
  const zakladki = {
     logowanie:  logowanie,
