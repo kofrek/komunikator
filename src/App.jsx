@@ -3,7 +3,7 @@ import './App.css'
 
 
 export default function App() {
-  const [zakladka, zmianaZakladki] = useState("logowanie");
+  const [zakladka, zmianaZakladki] = useState("Logowanie");
   const [ilosc, zmianaIlosci] = useState(0);
 
 
@@ -61,7 +61,7 @@ function komunikator(){
 
 
  const zakladki = {
-    logowanie:  logowanie,
+    Logowanie:  logowanie,
   
   };
 
