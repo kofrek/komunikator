@@ -70,12 +70,14 @@ export default function App() {
 
  <div className="boczny">
  <a href="https://galakpizza.pl/" target="_blank"><img src={zdj1} alt="galak pizza" /> </a>
+   </main>
+  
 </div>
 </>
 )
    
     
-</main>
+
                                                                                                                                                                                             
  </>
 )
