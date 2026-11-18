@@ -27,7 +27,7 @@ export default function App() {
   <br /> 
  <br />
 
- <p>niepamietasz hasła?</p>  id="zakladka2" onClick={() => zmianaZakladki("Rejestrowanie")}             <p>zarejestruj sie</p>
+ <p>niepamietasz hasła?</p>    <input type="button" value="zarejestruj sie " id="zakladka2" onClick={() => zmianaZakladki("Rejestrowanie")}></input>
   <input type="button" value="zaloguj sie " id="zakladka1" onClick={() => zmianaZakladki("Komunikator")}></input>
  </main>
  <div className="boczny">
