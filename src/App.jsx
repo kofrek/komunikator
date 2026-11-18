@@ -2,99 +2,133 @@ import zdj1 from '/src/assets/galak pizza.webp'
 import './App.css'
 import { useState } from 'react'
 
-
 export default function App() {
-  const [zakladka, zmianaZakladki] = useState("Logowanie");
-    const [ilosc, zmianaIlosci] = useState(0);
+  const [zakladka, zmianaZakladki] = useState("Logowanie")
 
+  function logowanie() {
+    return (
+      <>
+        <main className="logowanie">
+          <h1>Witaj w komunikatorze!</h1>
+          <h3>Zaloguj się</h3>
 
-    function logowanie() {
-      return (
-          <>
-<main className="logowanie">
-<h1>Witaj w komunikatorze!</h1>
- <h3>zaloguj sie </h3>
-  <label>
-  <p>  Wpisz swoją nazwę</p>
-  <input type="text" placeholder="Nazwa użytkownika" />
- </label>
+          <label>
+            <p>Wpisz swoją nazwę</p>
+            <input type="text" placeholder="Nazwa użytkownika" />
+          </label>
 
- <br />
-   <label>
- <p>        Wpisz swoje hasło</p>
- <input type="password" placeholder="Hasło" />
- </label>
-  <br /> 
- <br />
+          <br />
 
- <p>niepamietasz hasła?</p>    <input type="button" value="zarejestruj sie " id="zakladka2" onClick={() => zmianaZakladki("Rejestrowanie")}></input>
-  <input type="button" value="zaloguj sie " id="zakladka1" onClick={() => zmianaZakladki("Komunikator")}></input>
-    </main>
- <div className="boczny">
- <a href="https://galakpizza.pl/" target="_blank"><img src={zdj1} alt="galak pizza" /> </a>
+          <label>
+            <p>Wpisz swoje hasło</p>
+            <input type="password" placeholder="Hasło" />
+          </label>
 
-</div>
-</>
-)
- } function komunikator(){                                                                                                                                                                             return(
- <>
-  <main id="komunikator">
-<h3>cos</h3>
-   
-    
-</main>
-                                                                                                                                                                                            
- </>
-)
-}
-  function rejestrowanie(){                                                                                                                                                                             return(
- <>
-<main id="logowanie">
-<h1>Witaj w komunikatorze!</h1>
- <h3>zarejestruj  sie </h3>
-  <label>
-  <p>  Wpisz swoją nazwę</p>
-  <input type="text" placeholder="Nazwa użytkownika" />
- </label>
+          <br />
+          <br />
 
- <br />
-   <label>
- <p>        Wpisz swoje hasło</p>
- <input type="password" placeholder="Hasło" />
- </label>
-  <br /> 
- <br />
+          <p>Nie pamiętasz hasła?</p>
 
+          <input
+            type="button"
+            value="Zarejestruj się"
+            id="zakladka2"
+            onClick={() => zmianaZakladki("Rejestrowanie")}
+          />
 
- <p>masz już konto?</p> <input type="button" value="zaloguj sie " id="zakladka1" onClick={() => zmianaZakladki("Logowanie")}></input>
-    <input type="button" value="zarejestruj sie " id="zakladka2" onClick={() => zmianaZakladki("Komunikator")}></input>
-</main>
- <div className="boczny">
- <a href="https://galakpizza.pl/" target="_blank"><img src={zdj1} alt="galak pizza" /> </a>
-   
-  
-</div>
-</>
-)
-   
-    
+          <input
+            type="button"
+            value="Zaloguj się"
+            id="zakladka1"
+            onClick={() => zmianaZakladki("Komunikator")}
+          />
+        </main>
 
-                                                                                                                                                                                            
- </>
-)
-}
-const zakladki = {
- Logowanie:  logowanie,
- Komunikator: komunikator,
-Rejestrowanie: rejestrowanie,
-                                                                                                                                                                                                         
-};
- const AktywnaZakladka = zakladki[zakladka];
-return (
-<center>
+        <div className="boczny">
+          <a
+            href="https://galakpizza.pl/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={zdj1} alt="galak pizza" />
+          </a>
+        </div>
+      </>
+    )
+  }
 
-<br />
-<AktywnaZakladka />
-</center>
-);
+  function komunikator() {
+    return (
+      <main id="komunikator">
+        <h3>Witaj w komunikatorze!</h3>
+      </main>
+    )
+  }
+
+  function rejestrowanie() {
+    return (
+      <>
+        <main id="logowanie">
+          <h1>Witaj w komunikatorze!</h1>
+          <h3>Zarejestruj się</h3>
+
+          <label>
+            <p>Wpisz swoją nazwę</p>
+            <input type="text" placeholder="Nazwa użytkownika" />
+          </label>
+
+          <br />
+
+          <label>
+            <p>Wpisz swoje hasło</p>
+            <input type="password" placeholder="Hasło" />
+          </label>
+
+          <br />
+          <br />
+
+          <p>Masz już konto?</p>
+
+          <input
+            type="button"
+            value="Zaloguj się"
+            id="zakladka1"
+            onClick={() => zmianaZakladki("Logowanie")}
+          />
+
+          <input
+            type="button"
+            value="Zarejestruj się"
+            id="zakladka2"
+            onClick={() => zmianaZakladki("Komunikator")}
+          />
+        </main>
+
+        <div className="boczny">
+          <a
+            href="https://galakpizza.pl/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={zdj1} alt="galak pizza" />
+          </a>
+        </div>
+      </>
+    )
+  }
+
+  const zakladki = {
+    Logowanie: logowanie,
+    Komunikator: komunikator,
+    Rejestrowanie: rejestrowanie,
+  }
+
+  const AktywnaZakladka = zakladki[zakladka]
+
+  return (
+    <div className="kontener">
+      <br />
+      <AktywnaZakladka />
+    </div>
+  )
 }
