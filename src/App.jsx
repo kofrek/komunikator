@@ -13,7 +13,7 @@ export default function App() {
           <>
 <main className="logowanie">
 <h1>Witaj w komunikatorze!</h1>
- <h3>zaloguj sie czarnuchu!</h3>
+ <h3>zaloguj sie </h3>
   <label>
   <p>  Wpisz swoją nazwę</p>
   <input type="text" placeholder="Nazwa użytkownika" />
@@ -48,8 +48,31 @@ export default function App() {
 }
   function rejestrowanie(){                                                                                                                                                                             return(
  <>
-  <main id="rejestrowanie">
-<h3>cos2</h3>
+<main id="logowanie">
+<h1>Witaj w komunikatorze!</h1>
+ <h3>zarejestruj  sie </h3>
+  <label>
+  <p>  Wpisz swoją nazwę</p>
+  <input type="text" placeholder="Nazwa użytkownika" />
+ </label>
+
+ <br />
+   <label>
+ <p>        Wpisz swoje hasło</p>
+ <input type="password" placeholder="Hasło" />
+ </label>
+  <br /> 
+ <br />
+
+
+ <p>masz już konto?</p> <input type="button" value="zaloguj sie " id="zakladka1" onClick={() => zmianaZakladki("Logowanie")}></input>
+    <input type="button" value="zarejestruj sie " id="zakladka2" onClick={() => zmianaZakladki("Komunikator")}></input>
+ </main>
+ <div className="boczny">
+ <a href="https://galakpizza.pl/" target="_blank"><img src={zdj1} alt="galak pizza" /> </a>
+</div>
+</>
+)
    
     
 </main>
