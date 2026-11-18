@@ -29,9 +29,10 @@ export default function App() {
 
  <p>niepamietasz hasła?</p>    <input type="button" value="zarejestruj sie " id="zakladka2" onClick={() => zmianaZakladki("Rejestrowanie")}></input>
   <input type="button" value="zaloguj sie " id="zakladka1" onClick={() => zmianaZakladki("Komunikator")}></input>
- </main>
+
  <div className="boczny">
  <a href="https://galakpizza.pl/" target="_blank"><img src={zdj1} alt="galak pizza" /> </a>
+    </main>
 </div>
 </>
 )
