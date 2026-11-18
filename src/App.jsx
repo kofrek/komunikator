@@ -67,7 +67,7 @@ export default function App() {
 
  <p>masz już konto?</p> <input type="button" value="zaloguj sie " id="zakladka1" onClick={() => zmianaZakladki("Logowanie")}></input>
     <input type="button" value="zarejestruj sie " id="zakladka2" onClick={() => zmianaZakladki("Komunikator")}></input>
- </main>
+
  <div className="boczny">
  <a href="https://galakpizza.pl/" target="_blank"><img src={zdj1} alt="galak pizza" /> </a>
 </div>
