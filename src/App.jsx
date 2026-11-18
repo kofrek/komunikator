@@ -27,7 +27,7 @@ export default function App() {
   <br /> 
  <br />
 
- <p>niepamietasz hasła?</p><a href="https://www.facebook.com/r.php/" target="_blank"><p>zarejestruj sie</p></a>
+ <p>niepamietasz hasła?</p>  id="zakladka2" onClick={() => zmianaZakladki("Rejestrowanie")}             <p>zarejestruj sie</p>
   <input type="button" value="zaloguj sie " id="zakladka1" onClick={() => zmianaZakladki("Komunikator")}></input>
  </main>
  <div className="boczny">
@@ -39,6 +39,19 @@ export default function App() {
  <>
   <main id="komunikator">
 <h3>cos</h3>
+   
+    
+</main>
+                                                                                                                                                                                            
+ </>
+)
+}
+  function rejestrowanie(){                                                                                                                                                                             return(
+ <>
+  <main id="rejestrowanie">
+<h3>cos2</h3>
+   
+    
 </main>
                                                                                                                                                                                             
  </>
@@ -47,6 +60,7 @@ export default function App() {
 const zakladki = {
  Logowanie:  logowanie,
  Komunikator: komunikator,
+Rejestrowanie: rejestrowanie,
                                                                                                                                                                                                          
 };
  const AktywnaZakladka = zakladki[zakladka];
