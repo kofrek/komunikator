@@ -77,7 +77,11 @@ export default function App() {
           </p>
           <div id="glowny">
             
-          
+          <h1>
+          ty niemądro osóbko
+          </h1>
+            <h1> ty furasie
+            </h1>
           
           </div>
         
