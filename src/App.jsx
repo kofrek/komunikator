@@ -60,7 +60,29 @@ export default function App() {
   function komunikator() {
     return (
       <main id="komunikator">
-        <h3>Witaj w komunikatorze!</h3>
+        <h3>Witaj w komunikatorze</h3>
+        <div id="boczny">
+          <p>
+            kanal 1
+          
+          </p>
+              <p>
+            kanal 2
+          
+          </p>
+          <p>
+            kanal 3
+          
+          
+          </p>
+          <div id="glowny">
+            
+          
+          
+          </div>
+        
+        
+        </div>
       </main>
     )
   }
