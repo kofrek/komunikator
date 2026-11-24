@@ -19,3 +19,15 @@ background-color: aquamarine;
 img{
 align-items: center;
 }
+#komunikator{
+  background-color: aquamarine;
+ border-radius: 30px; color: red; 
+
+}
+.cont{
+  display: block;
+  text-align: center;
+}
+.kanaly{
+  text-align: left;
+}
