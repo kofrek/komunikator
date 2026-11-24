@@ -31,3 +31,6 @@ align-items: center;
 .kanaly{
   text-align: left;
 }
+.error{
+  color: red;
+}
