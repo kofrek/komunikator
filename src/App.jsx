@@ -59,19 +59,21 @@ export default function App() {
 
   function komunikator() {
     return (
+      
       <main id="komunikator">
+        <div className="cont">
         <h3>Witaj w komunikatorze</h3>
-        <div id="boczny">
+        <div id="kanaly">
           <p>
-            kanal 1
+       znajomy 1
           
           </p>
               <p>
-            kanal 2
+            znajomy  2
           
           </p>
           <p>
-            kanal 3
+            znajomy  3
           
           
           </p>
@@ -87,6 +89,13 @@ export default function App() {
         
         
         </div>
+        <div id="wylogowywanie"><input
+            type="button"
+            value="wyloguj  się"
+            id="zakladka3"
+            onClick={() => zmianaZakladki("Rejestrowanie")}
+          /></div>
+          </div>
       </main>
     )
   }
@@ -113,20 +122,20 @@ export default function App() {
           <br />
           <br />
 
-          <p>Masz już konto?</p>
+        
 
           <input
             type="button"
-            value="Zaloguj się"
+            value="rejestracja"
             id="zakladka1"
-            onClick={() => zmianaZakladki("Logowanie")}
+            onClick={() => zmianaZakladki("Komunikator")}
           />
-
+  <p>Masz już konto?</p>
           <input
             type="button"
-            value="Zarejestruj się"
+            value="zaloguj sie"
             id="zakladka2"
-            onClick={() => zmianaZakladki("Komunikator")}
+            onClick={() => zmianaZakladki("Logowanie")}
           />
         </main>
 
