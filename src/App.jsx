@@ -38,6 +38,20 @@ export default function App() {
     console.log("Użytkownik:", data.user);
     console.log("Sesja:", data.session);
   };
+  useEffect(() => {
+    const init = async () => {
+      const {
+        data: { session}      } = await supabase.auth.getSession();
+        setUser(session?.user ?? null);
+    };
+    init();
+    const {data: {subscrption }} = supabase.auth.onAuthStateChange((_event,session)=>{
+      setUser(session?.user ?? null);
+
+    });
+    return () => subscrption.unsubscrption();
+
+  }, []);
 
   // ZAKŁADKA LOGOWANIE
   const logowanie = (
@@ -81,8 +95,8 @@ export default function App() {
         />
 
         <button
-          onClick={sprawdzanie}
-          //onClick={() => zmianaZakladki("komunikator")}
+
+        onClick={() => zmianaZakladki("Komunikator")}
           disabled={czekanie}
         >
           {czekanie ? "Poczekaj mordo..." : "Zaloguj się"}
