@@ -1,36 +1,433 @@
-body{
-  font-family: cursive;
-}
-h1{
-  background-color: cadetblue;
-  color: burlywood;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background: #eaf3fa;
+  color: #263746;
+}
 
-.logowanie{
+/* GŁÓWNY KONTENER */
+
+.kontener {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* LOGOWANIE I REJESTRACJA */
+
+.logowanie,
+#logowanie {
+  width: 380px;
+  padding: 35px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px #cbd9e5;
+}
+
+.logowanie h1,
+#logowanie h1 {
   text-align: center;
-background-color: aquamarine;
-  border-radius: 200px;
-  border-top-left-radius: 20px;
-  color: black;
-  word-spacing: 7px;
-  
+  color: #247bb5;
+  margin-bottom: 15px;
+  font-size: 25px;
 }
-img{
-align-items: center;
-}
-#komunikator{
-  background-color: aquamarine;
- border-radius: 30px; color: red; 
 
-}
-.cont{
-  display: block;
+.logowanie h3,
+#logowanie h3 {
   text-align: center;
+  margin-bottom: 25px;
 }
-.kanaly{
+
+.logowanie p,
+#logowanie p {
+  margin: 12px 0 7px;
+  font-size: 14px;
+}
+
+input {
+  font-family: Arial, sans-serif;
+}
+
+.logowanie input:not([type="button"]),
+#logowanie input:not([type="button"]) {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c5d5e2;
+  border-radius: 6px;
+  outline: none;
+}
+
+.logowanie input:focus,
+#logowanie input:focus {
+  border-color: #268bd0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.logowanie button,
+#logowanie button {
+  width: 100%;
+  padding: 12px;
+  background: #2788c7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 12px;
+}
+
+.logowanie button:hover,
+#logowanie button:hover {
+  background: #176da8;
+}
+
+#zakladka2 {
+  width: 100%;
+  padding: 11px;
+  background: white;
+  color: #2788c7;
+  border: 1px solid #2788c7;
+  border-radius: 6px;
+}
+
+#zakladka2:hover {
+  background: #eaf5fc;
+}
+
+.error {
+  color: #d33;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+/* ZDJĘCIE BOCZNE */
+
+.boczny {
+  margin-left: 25px;
+}
+
+.boczny img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* KOMUNIKATOR */
+
+#komunikator {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
+
+.cont {
+  background: white;
+  min-height: 750px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px #cbd9e5;
+  overflow: hidden;
+}
+
+/* GÓRNY PASEK */
+
+.naglowek-komunikatora {
+  background: #2788c7;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.naglowek-komunikatora h2 {
+  font-size: 23px;
+}
+
+.naglowek-komunikatora div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.naglowek-komunikatora span {
+  font-size: 13px;
+}
+
+.naglowek-komunikatora button {
+  background: white;
+  color: #247bb5;
+  border: none;
+  border-radius: 5px;
+  padding: 9px 14px;
+}
+
+/* UKŁAD */
+
+.uklad-komunikatora {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 650px;
+}
+
+/* ZNAJOMI */
+
+.panel-znajomych {
+  background: #f3f8fc;
+  padding: 20px;
+  border-right: 1px solid #d5e3ed;
+}
+
+.panel-znajomych h3 {
+  margin-bottom: 18px;
+  color: #247bb5;
+}
+
+.panel-znajomych form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d5e3ed;
+}
+
+.panel-znajomych input {
+  padding: 11px;
+  border: 1px solid #c5d5e2;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.panel-znajomych form button {
+  padding: 11px;
+  background: #2788c7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.lista-znajomych {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding-top: 15px;
+}
+
+.znajomy {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   text-align: left;
+  padding: 12px;
+  background: white;
+  border: 1px solid #d5e3ed;
+  border-radius: 6px;
+  color: #263746;
 }
-.error{
-  color: red;
+
+.znajomy:hover,
+.znajomy.aktywny {
+  background: #dceefa;
+  border-color: #2788c7;
+}
+
+.znajomy small {
+  color: #718797;
+  overflow-wrap: anywhere;
+}
+
+/* ROZMOWA */
+
+.panel-rozmowy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: white;
+}
+
+.naglowek-rozmowy {
+  padding: 18px 22px;
+  border-bottom: 1px solid #d5e3ed;
+}
+
+.naglowek-rozmowy h3 {
+  color: #247bb5;
+  margin-bottom: 5px;
+}
+
+.naglowek-rozmowy small {
+  color: #718797;
+}
+
+/* WIADOMOŚCI */
+
+.wiadomosci {
+  flex: 1;
+  min-height: 400px;
+  max-height: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  background: #f7fafc;
+}
+
+.wiadomosc {
+  max-width: 70%;
+  padding: 12px;
+  border-radius: 9px;
+  overflow-wrap: anywhere;
+}
+
+.wiadomosc strong {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.wiadomosc p {
+  font-size: 14px;
+  margin-bottom: 7px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.wiadomosc small {
+  font-size: 10px;
+  display: block;
+  text-align: right;
+}
+
+.moja {
+  align-self: flex-end;
+  background: #cce8fa;
+  color: #23445a;
+}
+
+.obca {
+  align-self: flex-start;
+  background: white;
+  border: 1px solid #d5e3ed;
+  color: #263746;
+}
+
+.brak-wiadomosci,
+.brak-rozmowy {
+  text-align: center;
+  margin: auto;
+  color: #718797;
+}
+
+.brak-rozmowy h2 {
+  color: #247bb5;
+  margin-bottom: 10px;
+}
+
+/* WYSYŁANIE WIADOMOŚCI */
+
+.formularz-wiadomosci {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  border-top: 1px solid #d5e3ed;
+}
+
+.formularz-wiadomosci input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #c5d5e2;
+  border-radius: 6px;
+  outline: none;
+}
+
+.formularz-wiadomosci input:focus {
+  border-color: #2788c7;
+}
+
+.formularz-wiadomosci button {
+  padding: 12px 22px;
+  background: #2788c7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.formularz-wiadomosci button:hover {
+  background: #176da8;
+}
+
+/* TELEFONY */
+
+@media (max-width: 650px) {
+  .kontener {
+    padding: 0;
+  }
+
+  .boczny {
+    display: none;
+  }
+
+  .logowanie,
+  #logowanie {
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #komunikator {
+    padding: 0;
+  }
+
+  .cont {
+    border-radius: 0;
+    min-height: 100vh;
+  }
+
+  .uklad-komunikatora {
+    grid-template-columns: 1fr;
+  }
+
+  .panel-znajomych {
+    border-right: none;
+    border-bottom: 1px solid #d5e3ed;
+  }
+
+  .lista-znajomych {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .znajomy {
+    min-width: 140px;
+  }
+
+  .panel-rozmowy {
+    min-height: 500px;
+  }
+
+  .wiadomosc {
+    max-width: 90%;
+  }
+
+  .naglowek-komunikatora {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .naglowek-komunikatora span {
+    display: none;
+  }
 }
